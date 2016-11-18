@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    base(href="/")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(href="node_modules/bootstrap/dist/css/bootstrap.min.css", rel="stylesheet")
+    link(href="node_modules/ng2-toastr/bundles/ng2-toastr.min.css", rel="stylesheet")
+    //- link(href="node_modules/ng2-toastr/bundles/ng2-toastr.min.css", rel="stylesheet")
+    link(href="assets/css/app.css", rel="stylesheet")
+    title Scalable Modular AngularJS2 App
+  body
+    div.container
+        ng2-app Loading ...
+    
+    script(src='node_modules/core-js/client/shim.min.js')
+    script(src='node_modules/zone.js/dist/zone.min.js')
+    script(src='node_modules/reflect-metadata/Reflect.js')
+    //- script(src='node_modules/rxjs/bundles/Rx.min.js')
+    script(src='node_modules/systemjs/dist/system.js')
+    script(src='assets/js/assets-manager.js')
+    //- script(src='node_modules/ng2-toastr/bundles/ng2-toastr.min.js')
+    script.
+      System.import('main').then(null, console.error.bind(console));

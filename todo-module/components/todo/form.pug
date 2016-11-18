@@ -1,0 +1,10 @@
+div
+  //- app-shared-actionbar
+  form
+    .form-group
+      label(for='name') Title
+      input#name.form-control(name="title" type='text', placeholder='Title', [(ngModel)]="todoData.title")
+    .form-group
+      label(for='todo') Detail
+      textarea#todo.form-control(name="detail" rows="10" placeholder='Detail', [(ngModel)]="todoData.detail")
+    button.btn.btn-default((click)="onSave($event)") Save

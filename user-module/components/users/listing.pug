@@ -1,0 +1,13 @@
+div
+  //- app-shared-actionbar((onAddNewClicked)="onAddNewClicked($event)")
+  table.table(*ngIf="userList && userList.length > 0")
+    thead
+      tr
+        th ID
+        th Name
+        th ToDo Count
+    tbody
+      tr(*ngFor="let user of userList", (click)="onRowClick($event, user)")
+        td([innerText]="user.id")
+        td([innerText]="user.name")
+        td([innerText]="user.count")

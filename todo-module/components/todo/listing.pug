@@ -1,0 +1,11 @@
+div
+  app-shared-actionbar((onAddNewClicked)="onAddNewClicked($event)", (onDeleteAllClicked)="onDeleteAll($event)")
+  table.table(*ngIf="todoList && todoList.length > 0")
+    thead
+      tr
+        th No.
+        th Title
+    tbody
+      tr(*ngFor="let todo of todoList", (click)="onRowClick($event, todo)")
+        td([innerText]="todo.id")
+        td([innerText]="todo.title")

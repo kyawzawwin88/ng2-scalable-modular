@@ -1,0 +1,9 @@
+nav.navbar.navbar-default
+  .container-fluid
+    .navbar-header
+      a.navbar-brand([routerLink]='[""]') AngularJS2
+    ul.nav.navbar-nav
+      li([ngClass]="{ active: activatedRoute == 'users' }")
+        a((click)='onNavigate($event, "users")') Manage Users
+      li([ngClass]="{ active: activatedRoute == 'todo' }")
+        a((click)='onNavigate($event, "todo")') Manage Todo

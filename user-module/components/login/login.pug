@@ -1,0 +1,8 @@
+form
+  .form-group
+    label(for='emailaddress') Email address
+    input#emailaddress.form-control(name="email", type='email', placeholder='Email', [(ngModel)]="email")
+  .form-group
+    label(for='password') Password
+    input#password.form-control(name="password", type='password', placeholder='Password', [(ngModel)]="password")
+  button.btn.btn-default((click)="onLogin($event)") Login

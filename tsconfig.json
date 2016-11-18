@@ -1,0 +1,21 @@
+{
+  "baseUrl": "/",
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": false,
+    "noImplicitAny": true,
+    "removeComments": false,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": false,
+    "isolatedModules": false,
+    "suppressImplicitAnyIndexErrors": false
+  },
+  "exclude": [
+    "node_modules", 
+    "release"
+  ]
+}
